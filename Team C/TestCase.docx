@@ -1,0 +1,80 @@
+Create New Order:
+Based on the "Create New Order" screen in the Retail Management System, here are some test cases:
+Functional Testing:
+Verify if the "Supplier Name" dropdown loads and displays all supplier options.
+Check that selecting a supplier updates related fields such as "Product".
+Ensure that the "OrderID" is auto-generated and unique for each transaction.
+Confirm that the "Order Date" is automatically populated with the current date or selectable through a date picker.
+Test the functionality of the product selection dropdown; it should list available products tied to the selected supplier.
+Validate the "Quantity" field to accept only numerical values and checks for zero or negative inputs.
+Ensure that the "Unit Price" is automatically populated after selecting a product and is calculated correctly.
+Check if the "Price" field automatically calculates the product of "Quantity" and "Unit Price".
+Verify the "Add Product" button functionality to add the selected product to the order list below.
+Assess if the "Delivery Options" dropdown changes the "Delivery Date" and "Delivery Cost" accordingly.
+Ensure the "Clear" button resets all fields to their default values.
+Test the "Cancel" button to make sure it closes the order form or goes back to the previous screen without saving.
+Confirm the "Save" button functionality to ensure the order saves correctly to the system.
+Verify that the "Comments" field allows input of text and check the character limitations.
+
+Boundary Testing:
+Test input of maximum, minimum, and beyond maximum and minimum characters for fields that have character limits, like "Comments".
+Verify the limit of the "Quantity" field to see how it handles large numbers.
+User Interface Testing:
+Inspect the layout and alignment of all elements to ensure clarity and consistency.
+Check that interactive elements provide visual feedback on hover or selection.
+Ensure error messages are clear and positioned correctly in relation to the associated fields.
+
+
+
+
+Usability Testing:
+Validate the tab order for keyboard navigation reflects the visual order of the form fields.
+Ensure accessibility features, like labeling form fields, are implemented for screen readers.
+Review whether tooltips or help text are available for fields that might require additional explanation.
+
+Performance Testing:
+Test response times for populating "Delivery Date" and "Delivery Cost" after selecting different "Delivery Options."
+Verify system behavior if the "Add Product" button is clicked multiple times in quick succession.
+
+Security Testing:
+Check if the form handles special characters or code injections without causing security vulnerabilities.
+Ensure any sensitive information displayed on this form is handled securely to prevent data leakage.
+
+
+Get Orders Screen:
+Verify Page Load:
+Ensure that the "Order Control" page loads successfully with all the required elements.
+Test 'Create new order' Button:
+Test that clicking the "Create new order" button directs the user to the order creation form.
+
+Filter Functionality:
+Check that the "Filter by:" dropdown lists all the valid filter criteria (e.g., Order ID, Date).
+Validate the functionality of each filter criterion.
+Order List Display:
+
+Ensure that the list of orders with details like Order ID, Order Date, Title, Cost, and Outstanding is correctly displayed.
+Order Details Expansion:
+Test the expansion functionality when clicking on an order row to display the product details associated with it.
+Display Correct Order Details:
+For a selected order, verify that the details such as Product, Quantity, and Price are correct.
+Outstanding Checkbox:
+Check the functionality of the "Outstanding" checkbox on each order row.
+Sort Order:
+Verify the ability to sort the orders by the columns provided (if sorting functionality exists).
+UI Elements and Alignment:
+Confirm that all UI elements are properly aligned and have a consistent style.
+Test Refresh:
+
+Verify that refreshing the page maintains the last selected filter.
+
+Pagination and Scrolling:
+If the list of orders is paginated or requires scrolling, test the navigation between pages and scrolling functionality.
+
+Responsive Design Check:
+Confirm that the page layout and elements adapt properly for different screen sizes if the application is responsive.
+
+Error Handling:
+Check how the system handles errors such as an unsuccessful page load or an empty list of orders.
+
+Data Consistency:
+Ensure that the information shown on the "Get Order" screen is consistent with the data in other parts of the system (e.g., database).
